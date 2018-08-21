@@ -1,11 +1,11 @@
 class DoctorsController < ApplicationController
 
   def index
-    @doctors = Patient.all
+    @doctors = Doctor.all
   end
 
   def show
-    @doctor = Patient.find_by_id(params[:id])
+    @doctor = Doctor.find_by_id(params[:id])
   end
 
 end
