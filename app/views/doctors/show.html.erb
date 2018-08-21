@@ -2,7 +2,6 @@
 
 <ul>
   <% @doctor.appointments.each do |appt| %>
-  postdate
-  <li> <%= appt.appointment_datetime.strftime("%B %d, %Y") %> <%= appt.patient %></li>
+  <li> <%= appt.appointment_datetime.strftime("%B %d, %Y") %> <%= appt.patient.name %></li>
   <% end %>
 </ul>
